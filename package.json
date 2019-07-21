@@ -1,0 +1,25 @@
+{
+  "name": "PWA",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "npx polymer serve",
+    "build": "rimraf dist && rollup -c rollup.config.js",
+    "start:build": "es-dev-server --app-index dist/index.html --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vaadin/router": "^1.2.1",
+    "firebase": "^6.2.4",
+    "lit-element": "^2.2.0"
+  },
+  "devDependencies": {
+    "@open-wc/building-rollup": "^0.8.8",
+    "es-dev-server": "^1.6.7",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.17.0"
+  }
+}
